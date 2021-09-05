@@ -1,0 +1,158 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url("./images/pattern-background-desktop.svg") space;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainer{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px lightgray;
+
+}
+
+.cardTop{
+    height: 34%;
+    background: url("./images/illustration-hero.svg");
+    border-radius: 20px 20px 0 0;
+}
+.cardBottom{
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title{
+    margin: 20px;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: hsl(223, 47%, 23%);
+}
+
+.card-desc{
+    text-align: center;
+    padding: 5px 35px;
+    color: rgb(95, 93, 93);
+    line-height: 1.6em;
+}
+
+.plan-container{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px;
+    border-radius: 10px;    
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    margin-left: -30px;
+}
+
+.plan-title{   
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+.plan-amount{
+    font-weight: 500;
+    color: rgb(95, 93, 93);
+}
+.right{
+    font-size: 0.9em;  
+}
+a{
+    color: blue;
+    font-weight: 600;
+}
+a:hover{
+    color: hsl(245, 75%, 52%);
+    text-decoration: none;
+}
+
+.but-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pay-button{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px blue;
+}
+.pay-button:hover{
+    background-color: hsl(223, 56%, 40%);
+}
+
+.cancel-button{
+    width: 70%;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgb(95, 93, 93);
+    cursor: pointer;
+}
+.cancel-button:hover{
+    color: black;
+}
+
+@media only screen and (max-width: 375px) {
+    .container{
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .cardContainer{
+        width: 90%;
+        height: 90%;
+    }
+    .plan-container{
+        width: 90%;
+        margin-left: 10px;
+        padding: 5px 5px 5px 0px;
+    }
+    .pay-button, .cancel-button{
+        width: 90%;
+    }  
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .cardContainer{
+        width: 90%;
+        height: 90%;
+    }
+    .plan-container{
+        width: 90%;
+        margin-left: 10px;
+        padding: 5px 5px 5px 0px;
+    }
+    .pay-button, .cancel-button{
+        width: 90%;
+    }  
+  }
